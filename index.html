@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Memori</title>
+</head>
+<body>
+  <header>
+    <img id="play" src="sound-png-icon-0.png" width="20">
+    <h1>MEMORY</h1>
+  </header>
+  
+  <section class="main">
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+    <div class="box play"></div>
+  
+    <div id="state">
+      <span id="time">0</span>
+      <span id="score">0</span>
+    </div>
+  </section>
+  
+  <footer>
+    <p>Created by <a href="https://remybeumier.be" target="_blank">Wahyu</a></p>
+  </footer>
+  
+  <section id="pre" class="">
+    <div id="themes">
+      <h2>Pilih Tema Mu !</h2>
+      <p id="pokemon" class="themes" title="Pokemon">Pokemon</p>
+      <p id="starwars" class="themes" title="Star Wars">Star Wars</p>
+      <p id="lotr" class="themes" title="Lord of the Ring">Lord of the Ring</p>
+      <p id="disney" class="themes" title="Disney">Disney</p>
+      <p id="pixar" class="themes" title="Pixar">Pixar</p>
+      <p id="harrypotter" class="themes" title="Harry Potter">Harry Potter</p>
+    </div>
+  </section>
+  
+  <section id="post" class="hidden">
+    <div>
+      <h2>MANTAP !</h2>
+      <p id="final"></p>
+      <br>
+      <p>
+        <a id="again">Mulai Ulang !</a>
+      </p>
+    </div>
+  </section>
+  <script>
+    let play = document.getElementById("play");
+    function playMusic(){
+        let audio = new Audio("Royalty.mp3");
+        audio.play()
+    }
+    play.addEventListener("click",playMusic);
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
